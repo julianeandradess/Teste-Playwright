@@ -12,6 +12,9 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
+      - name: Instalar navegadores do Playwright
+        run: npx playwright install
+
       - name: Rodar testes de UI
         run: npm run test:ui
 
