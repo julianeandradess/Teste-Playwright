@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout código
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Instalar dependências
         run: npm install
@@ -17,7 +17,7 @@ jobs:
 
       - name: Salvar relatório de UI
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: playwright-ui-report
           path: playwright-report
@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout código
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Instalar dependências
         run: npm install
@@ -36,7 +36,7 @@ jobs:
 
       - name: Salvar relatório de API
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: playwright-api-report
           path: playwright-report
