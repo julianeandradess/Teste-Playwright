@@ -29,13 +29,13 @@ Para rodar os testes de API:
 npm run test:api
 Estrutura do Projeto
 
-tests
-  /api/reqres.spec.ts       # Testes de API
-  /ui/swaglabs.spec.ts      # Testes de UI
-playwright.config.ts          # Configuração do Playwright
-package.json
-README.md
-tsconfig.json                 # Configuração do TypeScript
+<br>tests
+<br>  /api/reqres.spec.ts       # Testes de API
+<br>  /ui/swaglabs.spec.ts      # Testes de UI
+<br> playwright.config.ts          # Configuração do Playwright
+<br> package.json
+<br> README.md
+<br> tsconfig.json                 # Configuração do TypeScript
 
 Descrição dos Testes
 Parte 1: Automação de UI com Playwright
